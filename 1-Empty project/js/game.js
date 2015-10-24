@@ -3,7 +3,7 @@ var gameProperties = {
     screenHeight: 480,
 };
 
-var gameStates = {
+var states = {
     game: "game",
 };
 
@@ -27,5 +27,5 @@ gameState.prototype = {
 };
 
 var game = new Phaser.Game(gameProperties.screenWidth, gameProperties.screenHeight, Phaser.AUTO, 'gameDiv');
-game.state.add(gameStates.game, gameState);
-game.state.start(gameStates.game);
+game.state.add(states.game, gameState);
+game.state.start(states.game);
